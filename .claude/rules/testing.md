@@ -4,7 +4,10 @@ paths:
 ---
 # Testing
 
-Vitest plus `@vue/test-utils`. Tests live next to what they test: `UiButton.spec.ts`.
+Vitest plus `@vue/test-utils`. Tests live in `__tests__/` at the repo root, mirroring `src/`
+exactly: `src/components/ui/UiButton.vue` is tested by `__tests__/components/ui/UiButton.spec.ts`,
+and `src/views/post/_etc/headings.ts` by `__tests__/views/post/_etc/headings.spec.ts`. A test
+imports through the `@/` alias, never a relative path back into `src/`.
 
 **Worth testing**
 - Design-system primitives: the variant matrix renders, and the accessibility contract holds

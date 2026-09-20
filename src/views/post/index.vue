@@ -1,6 +1,6 @@
 <template>
   <article v-if="note" class="flex flex-col gap-10 lg:flex-row lg:gap-14">
-    <NoteAside :note="note" :headings="headings" />
+    <PostAside :note="note" :headings="headings" />
 
     <div class="max-w-[68ch] flex-grow">
       <h1
@@ -15,14 +15,14 @@
         <div v-html="body" />
       </UiProse>
 
-      <NoteNav class="mt-11" :previous="previous" :next="next" />
+      <PostNav class="mt-11" :previous="previous" :next="next" />
     </div>
   </article>
 
   <section v-else class="flex flex-col gap-4">
     <UiMeta>{{ t('notFound.code') }}</UiMeta>
-    <h1 class="font-display text-3xl font-bold text-ink">{{ t('note.missingTitle') }}</h1>
-    <UiLink :to="{ name: 'notes' }">{{ t('note.missingBack') }}</UiLink>
+    <h1 class="font-display text-3xl font-bold text-ink">{{ t('post.missingTitle') }}</h1>
+    <UiLink :to="{ name: 'blog' }">{{ t('post.missingBack') }}</UiLink>
   </section>
 </template>
 
@@ -35,8 +35,8 @@ import UiMeta from '@/components/ui/UiMeta.vue'
 import UiProse from '@/components/ui/UiProse.vue'
 import { useNotes } from '@/composables/useNotes'
 
-import NoteAside from './_components/NoteAside.vue'
-import NoteNav from './_components/NoteNav.vue'
+import PostAside from './_components/PostAside.vue'
+import PostNav from './_components/PostNav.vue'
 import { extractHeadings, withHeadingIds } from './_etc/headings'
 
 import type { INote } from '@/types/note.types'

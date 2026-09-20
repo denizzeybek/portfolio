@@ -26,10 +26,11 @@ conventions here are not decoration: they are the thing being demonstrated. Keep
 - Vue 3 (`<script setup>`, Composition API) + TypeScript
 - Vite 8, Tailwind CSS v4 (css-first `@theme` tokens, no `tailwind.config.js`)
 - Vue Router 5, vue-i18n 11 (en + tr), `@vueuse/core`
-- Vitest + `@vue/test-utils` for logic and design-system primitives
+- Vitest + `@vue/test-utils`, specs in `__tests__/` mirroring `src/`
 
 ## Layout
 ```
+__tests__/             vitest specs, mirroring the src/ tree one for one
 src/
   assets/main.css        design tokens + base layer — the single source of visual truth
   components/ui/         the design system: Ui*.vue primitives, nothing feature-specific

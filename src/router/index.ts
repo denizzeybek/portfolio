@@ -9,19 +9,23 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/home/index.vue'),
   },
   {
-    path: '/notes',
-    name: 'notes',
-    component: () => import('@/views/notes/index.vue'),
+    path: '/blog',
+    name: 'blog',
+    component: () => import('@/views/blog/index.vue'),
   },
   {
-    path: '/notes/:slug',
-    name: 'note',
-    component: () => import('@/views/note/index.vue'),
+    path: '/blog/:slug',
+    name: 'post',
+    component: () => import('@/views/post/index.vue'),
     props: true,
   },
   {
     path: '/about',
     redirect: { name: 'home' },
+  },
+  {
+    path: '/notes/:pathMatch(.*)*',
+    redirect: { name: 'blog' },
   },
   {
     path: '/:pathMatch(.*)*',

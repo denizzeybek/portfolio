@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
 
-import UiButton from './UiButton.vue'
+import UiButton from '@/components/ui/UiButton.vue'
 
 describe('UiButton', () => {
   it('renders a real button element by default', () => {

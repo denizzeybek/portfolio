@@ -5,20 +5,23 @@
   },
   "nav": {
     "home": "About",
-    "notes": "Notes",
     "contact": "Contact",
     "language": "Language",
-    "switchTo": "Türkçe"
+    "switchTo": "Türkçe",
+    "switchLanguage": "Switch language to {language}",
+    "blog": "Blog"
   },
   "home": {
-    "eyebrow": "Senior Frontend Engineer · Vue · TypeScript",
-    "headline": "I build frontends that are still worth working in three years later.",
-    "intro": "Six years on Vue and TypeScript, most of it on products other teams depend on: analytics dashboards, a component library three products were rebuilt on, and a Vue 2 to Vue 3 migration that ran while the roadmap kept moving. React and React Native when a project calls for them.",
+    "eyebrow": "Senior Frontend Engineer · Remote · GMT+3",
+    "headline": "Deniz Zeybek",
+    "intro": "Most of my work has been analytics dashboards, a component library three products were rebuilt on, and a Vue 2 to Vue 3 migration that ran while the roadmap kept moving.",
     "agents": "Since 2025 I work with coding agents every day, and it changed how I set a project up before the first feature: a generated API client, a strict compiler, and conventions written where an agent can read them.",
     "nda": "Almost everything I have shipped sits behind an NDA, so there is no gallery here. What I think is in the {notes}.",
-    "ndaLink": "notes",
+    "ndaLink": "blog",
     "experience": "Experience",
-    "readNotes": "read the notes →"
+    "readNotes": "read the blog →",
+    "roleLine": "Senior Frontend Engineer — Vue, TypeScript, and six years of products other teams depend on.",
+    "facts": "I am based in Turkey on GMT+3 and work remotely only, worldwide or across EMEA, contract or full-time. Computer Engineering degree from Muğla University, professional English, native Turkish. Deepest on Vue 3, Nuxt and TypeScript; hands-on with React and React Native."
   },
   "now": {
     "title": "Now",
@@ -26,26 +29,6 @@
     "elsewhere": "Elsewhere",
     "role": "Senior Frontend Developer at a customer engagement platform.",
     "availability": "Open to senior remote roles."
-  },
-  "notes": {
-    "eyebrow": "Notes",
-    "headline": "What I think about building frontends, written down.",
-    "intro": "Migrations, design systems, architecture boundaries, and working with coding agents. No client work and no screenshots — the reasoning is the part that travels.",
-    "all": "All notes",
-    "count": "{count} published",
-    "minutes": "{count} min",
-    "empty": "Nothing published yet."
-  },
-  "note": {
-    "back": "← all notes",
-    "published": "Published",
-    "reading": "Reading",
-    "readingValue": "{count} minutes",
-    "outline": "On this page",
-    "previous": "Previous",
-    "next": "Next",
-    "missingTitle": "That note does not exist.",
-    "missingBack": "Back to all notes"
   },
   "contact": {
     "title": "Hiring for a senior Vue role?",
@@ -68,7 +51,7 @@
     "code": "404",
     "title": "This page does not exist.",
     "body": "The link may be old, or I moved something.",
-    "back": "Back to all notes"
+    "back": "Back to the blog"
   },
   "experience": {
     "insiderone": {
@@ -86,5 +69,25 @@
       "period": "Jun 2020 — Aug 2022",
       "summary": "Full-stack work for enterprise clients, from gathering the requirement to shipping it. The frontend was Vue; the backend and the database design taught me what the other side of an API costs."
     }
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "headline": "What I think about building frontends, written down.",
+    "intro": "Migrations, design systems, architecture boundaries, and working with coding agents. No client work and no screenshots — the reasoning is the part that travels.",
+    "all": "All posts",
+    "count": "{count} published",
+    "minutes": "{count} min",
+    "empty": "Nothing published yet."
+  },
+  "post": {
+    "back": "← all posts",
+    "published": "Published",
+    "reading": "Reading",
+    "readingValue": "{count} minutes",
+    "outline": "On this page",
+    "previous": "Previous",
+    "next": "Next",
+    "missingTitle": "That post does not exist.",
+    "missingBack": "Back to the blog"
   }
 }

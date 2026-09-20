@@ -5,20 +5,23 @@
   },
   "nav": {
     "home": "Hakkımda",
-    "notes": "Yazılar",
     "contact": "İletişim",
     "language": "Dil",
-    "switchTo": "English"
+    "switchTo": "English",
+    "switchLanguage": "Dili {language} olarak değiştir",
+    "blog": "Blog"
   },
   "home": {
-    "eyebrow": "Kıdemli Frontend Geliştirici · Vue · TypeScript",
-    "headline": "Üç yıl sonra da içinde çalışılabilir frontend'ler kuruyorum.",
-    "intro": "Altı yıldır Vue ve TypeScript ile, çoğunlukla başka ekiplerin bağımlı olduğu ürünlerde: analitik panolar, üç ürünün üzerine kurulduğu bir bileşen kütüphanesi ve yol haritası durmadan sürdürülen bir Vue 2'den Vue 3'e geçiş. Proje gerektirdiğinde React ve React Native.",
+    "eyebrow": "Kıdemli Frontend Geliştirici · Uzaktan · GMT+3",
+    "headline": "Deniz Zeybek",
+    "intro": "İşlerimin çoğu analitik panolar, üç ürünün üzerine kurulduğu bir bileşen kütüphanesi ve yol haritası durmadan sürdürülen bir Vue 2'den Vue 3'e geçiş oldu.",
     "agents": "2025'ten beri her gün kod yazan ajanlarla çalışıyorum ve bu, ilk özellikten önce projeyi nasıl kurduğumu değiştirdi: üretilmiş bir API istemcisi, sıkı bir derleyici ve ajanın okuyabileceği yere yazılmış kurallar.",
     "nda": "Geliştirdiğim işlerin neredeyse tamamı gizlilik sözleşmesi altında, bu yüzden burada bir vitrin yok. Ne düşündüğüm {notes} içinde.",
-    "ndaLink": "yazılarda",
+    "ndaLink": "blogda",
     "experience": "Deneyim",
-    "readNotes": "yazıları oku →"
+    "readNotes": "blogu oku →",
+    "roleLine": "Kıdemli Frontend Geliştirici — Vue, TypeScript ve başka ekiplerin bağımlı olduğu ürünlerde altı yıl.",
+    "facts": "Türkiye'de, GMT+3 saat diliminde yaşıyorum ve yalnızca uzaktan çalışıyorum: dünya geneli veya EMEA, sözleşmeli ya da tam zamanlı. Muğla Üniversitesi Bilgisayar Mühendisliği mezunuyum; profesyonel düzeyde İngilizce, ana dil Türkçe. En derin olduğum yer Vue 3, Nuxt ve TypeScript; React ve React Native ile de çalışıyorum."
   },
   "now": {
     "title": "Şu an",
@@ -26,26 +29,6 @@
     "elsewhere": "Diğer yerler",
     "role": "Bir müşteri etkileşim platformunda Kıdemli Frontend Geliştirici.",
     "availability": "Kıdemli uzaktan rollere açığım."
-  },
-  "notes": {
-    "eyebrow": "Yazılar",
-    "headline": "Frontend kurmak üzerine ne düşündüğüm, yazıya dökülmüş hâli.",
-    "intro": "Geçişler, tasarım sistemleri, mimari sınırlar ve kod yazan ajanlarla çalışmak. Müşteri işi ve ekran görüntüsü yok — taşınabilir olan kısım, gerekçenin kendisi.",
-    "all": "Tüm yazılar",
-    "count": "{count} yazı",
-    "minutes": "{count} dk",
-    "empty": "Henüz yayımlanmış yazı yok."
-  },
-  "note": {
-    "back": "← tüm yazılar",
-    "published": "Yayım",
-    "reading": "Okuma",
-    "readingValue": "{count} dakika",
-    "outline": "Bu sayfada",
-    "previous": "Önceki",
-    "next": "Sonraki",
-    "missingTitle": "Böyle bir yazı yok.",
-    "missingBack": "Tüm yazılara dön"
   },
   "contact": {
     "title": "Kıdemli bir Vue rolü mü arıyorsunuz?",
@@ -68,7 +51,7 @@
     "code": "404",
     "title": "Böyle bir sayfa yok.",
     "body": "Bağlantı eski olabilir ya da bir şeyi taşımış olabilirim.",
-    "back": "Tüm yazılara dön"
+    "back": "Blog'a dön"
   },
   "experience": {
     "insiderone": {
@@ -86,5 +69,25 @@
       "period": "Haz 2020 — Ağu 2022",
       "summary": "Kurumsal müşteriler için uçtan uca full-stack iş: gereksinimi toplamaktan yayına almaya kadar. Frontend Vue'ydu; backend ve veritabanı tasarımı bana bir API'nin diğer tarafının neye mal olduğunu öğretti."
     }
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "headline": "Frontend kurmak üzerine ne düşündüğüm, yazıya dökülmüş hâli.",
+    "intro": "Geçişler, tasarım sistemleri, mimari sınırlar ve kod yazan ajanlarla çalışmak. Müşteri işi ve ekran görüntüsü yok — taşınabilir olan kısım, gerekçenin kendisi.",
+    "all": "Tüm yazılar",
+    "count": "{count} yazı",
+    "minutes": "{count} dk",
+    "empty": "Henüz yayımlanmış yazı yok."
+  },
+  "post": {
+    "back": "← tüm yazılar",
+    "published": "Yayım",
+    "reading": "Okuma",
+    "readingValue": "{count} dakika",
+    "outline": "Bu sayfada",
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "missingTitle": "Böyle bir yazı yok.",
+    "missingBack": "Blog'a dön"
   }
 }

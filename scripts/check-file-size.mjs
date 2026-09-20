@@ -2,7 +2,10 @@ import { readFileSync } from 'node:fs'
 import { globSync } from 'node:fs'
 
 const LIMIT = 250
-const files = globSync('src/**/*.{vue,ts}', { exclude: (p) => p.includes('node_modules') })
+const patterns = ['src/**/*.{vue,ts}', '__tests__/**/*.ts']
+const files = patterns.flatMap((pattern) =>
+  globSync(pattern, { exclude: (p) => p.includes('node_modules') }),
+)
 
 const offenders = files
   .map((file) => ({ file, lines: readFileSync(file, 'utf8').split('\n').length }))

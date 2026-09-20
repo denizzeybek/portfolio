@@ -1,11 +1,11 @@
 <template>
   <RouterLink
-    :to="{ name: 'note', params: { slug: note.slug } }"
+    :to="{ name: 'post', params: { slug: note.slug } }"
     class="group flex gap-6 border-t border-line py-6 no-underline sm:gap-10"
   >
     <span class="hidden w-24 shrink-0 font-mono text-xs leading-7 text-ink-faint sm:block">
       {{ publishedAt }}
-      <span class="block text-ink-faint/70">{{ t('notes.minutes', { count: note.readingMinutes }) }}</span>
+      <span class="block text-ink-faint/70">{{ t('blog.minutes', { count: note.readingMinutes }) }}</span>
     </span>
 
     <span class="flex-grow">

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { selectPublished, sortByDateDescending, useNotes } from './useNotes'
+import { selectPublished, sortByDateDescending, useNotes } from '@/composables/useNotes'
 
 import type { INote } from '@/types/note.types'
 

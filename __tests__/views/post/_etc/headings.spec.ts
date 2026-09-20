@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { extractHeadings, slugifyHeading, withHeadingIds } from './headings'
+import { extractHeadings, slugifyHeading, withHeadingIds } from '@/views/post/_etc/headings'
 
 const html = '<h2>The contract first</h2><p>text</p><h2>Where it <em>breaks</em></h2>'
 

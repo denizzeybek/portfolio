@@ -9,15 +9,16 @@
 
     <nav class="flex items-center gap-5 font-mono text-xs sm:gap-7">
       <UiLink :to="{ name: 'home' }" tone="quiet" :underline="false">{{ t('nav.home') }}</UiLink>
-      <UiLink :to="{ name: 'notes' }" tone="quiet" :underline="false">{{ t('nav.notes') }}</UiLink>
+      <UiLink :to="{ name: 'blog' }" tone="quiet" :underline="false">{{ t('nav.blog') }}</UiLink>
       <UiLink href="#contact" tone="quiet" :underline="false">{{ t('nav.contact') }}</UiLink>
       <button
         type="button"
-        class="min-h-11 cursor-pointer border-0 bg-transparent font-mono text-xs text-ink-muted transition-colors duration-150 hover:text-accent"
-        :aria-label="t('nav.language')"
+        class="inline-flex min-h-11 cursor-pointer items-center gap-2 border-0 bg-transparent font-mono text-xs text-ink-muted transition-colors duration-150 hover:text-accent"
+        :aria-label="t('nav.switchLanguage', { language: t('nav.switchTo') })"
         @click="toggleLocale"
       >
-        {{ t('nav.switchTo') }}
+        <UiFlag :locale="otherLocale" />
+        <span>{{ t('nav.switchTo') }}</span>
       </button>
     </nav>
   </header>
@@ -27,9 +28,10 @@
 import { useI18n } from 'vue-i18n'
 import { RouterLink } from 'vue-router'
 
+import UiFlag from '@/components/ui/UiFlag.vue'
 import UiLink from '@/components/ui/UiLink.vue'
 import { useLocale } from '@/composables/useLocale'
 
 const { t } = useI18n()
-const { toggleLocale } = useLocale()
+const { otherLocale, toggleLocale } = useLocale()
 </script>

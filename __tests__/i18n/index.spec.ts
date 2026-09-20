@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest'
 import en from '@/locales/en.json'
 import tr from '@/locales/tr.json'
 
-import { resolveInitialLocale } from './index'
+import { resolveInitialLocale } from '@/i18n'
 
 function keyPaths(value: unknown, prefix = ''): string[] {
   if (typeof value !== 'object' || value === null) return [prefix]

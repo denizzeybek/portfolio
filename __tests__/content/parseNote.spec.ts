@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { estimateReadingMinutes, parseFrontmatter, toNote } from './parseNote'
+import { estimateReadingMinutes, parseFrontmatter, toNote } from '@/content/parseNote'
 
 const identity = (md: string): string => md
 

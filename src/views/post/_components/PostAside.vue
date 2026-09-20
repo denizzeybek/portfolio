@@ -1,23 +1,23 @@
 <template>
   <aside class="flex shrink-0 flex-col gap-6 lg:w-44">
-    <UiLink :to="{ name: 'notes' }" tone="quiet" :underline="false" class="font-mono text-xs">
-      {{ t('note.back') }}
+    <UiLink :to="{ name: 'blog' }" tone="quiet" :underline="false" class="font-mono text-xs">
+      {{ t('post.back') }}
     </UiLink>
 
     <div>
-      <UiMeta class="pb-2">{{ t('note.published') }}</UiMeta>
+      <UiMeta class="pb-2">{{ t('post.published') }}</UiMeta>
       <p class="font-mono text-xs text-ink">{{ publishedAt }}</p>
     </div>
 
     <div>
-      <UiMeta class="pb-2">{{ t('note.reading') }}</UiMeta>
+      <UiMeta class="pb-2">{{ t('post.reading') }}</UiMeta>
       <p class="font-mono text-xs text-ink">
-        {{ t('note.readingValue', { count: note.readingMinutes }) }}
+        {{ t('post.readingValue', { count: note.readingMinutes }) }}
       </p>
     </div>
 
     <div v-if="headings.length > 0" class="hidden lg:block">
-      <UiMeta class="pb-2">{{ t('note.outline') }}</UiMeta>
+      <UiMeta class="pb-2">{{ t('post.outline') }}</UiMeta>
       <nav class="flex flex-col gap-2 font-mono text-xs">
         <UiLink v-for="heading in headings" :key="heading.id" :href="`#${heading.id}`" tone="quiet">
           {{ heading.text }}

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { formatNoteDate } from './useNoteDate'
+import { formatNoteDate } from '@/composables/useNoteDate'
 
 describe('formatNoteDate', () => {
   it('renders the short style as year.month', () => {

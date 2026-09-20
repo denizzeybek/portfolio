@@ -2,7 +2,7 @@ import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
 import { RouterLinkStub } from '@vue/test-utils'
 
-import UiLink from './UiLink.vue'
+import UiLink from '@/components/ui/UiLink.vue'
 
 const stubs = { RouterLink: RouterLinkStub }
 

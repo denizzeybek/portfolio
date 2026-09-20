@@ -3,7 +3,7 @@
     <UiMeta>{{ t('notFound.code') }}</UiMeta>
     <h1 class="font-display text-3xl font-bold text-ink">{{ t('notFound.title') }}</h1>
     <p class="font-mono text-sm text-ink-muted">{{ t('notFound.body') }}</p>
-    <UiLink :to="{ name: 'notes' }">{{ t('notFound.back') }}</UiLink>
+    <UiLink :to="{ name: 'blog' }">{{ t('notFound.back') }}</UiLink>
   </section>
 </template>
 
