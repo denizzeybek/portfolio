@@ -14,25 +14,25 @@
   "home": {
     "eyebrow": "Kıdemli Frontend Geliştirici · Uzaktan · GMT+3",
     "headline": "Deniz Zeybek",
-    "intro": "İşlerimin çoğu analitik panolar, üç ürünün üzerine kurulduğu bir bileşen kütüphanesi ve yol haritası durmadan sürdürülen bir Vue 2'den Vue 3'e geçiş oldu.",
-    "agents": "2025'ten beri her gün kod yazan ajanlarla çalışıyorum ve bu, ilk özellikten önce projeyi nasıl kurduğumu değiştirdi: üretilmiş bir API istemcisi, sıkı bir derleyici ve ajanın okuyabileceği yere yazılmış kurallar.",
-    "nda": "Geliştirdiğim işlerin neredeyse tamamı gizlilik sözleşmesi altında, bu yüzden burada bir vitrin yok. Ne düşündüğüm {notes} içinde.",
+    "roleLine": "Kıdemli Frontend Geliştirici — Vue, TypeScript ve başka ekiplerin üzerine iş kurduğu ürünlerde altı yıl.",
+    "facts": "Türkiye'de yaşıyorum, GMT+3 saat dilimindeyim ve yalnızca uzaktan çalışıyorum: dünya geneli ya da EMEA, sözleşmeli veya tam zamanlı fark etmiyor. Muğla Üniversitesi Bilgisayar Mühendisliği mezunuyum. İngilizcem profesyonel seviyede, ana dilim Türkçe. Asıl derinleştiğim yer Vue 3, Nuxt ve TypeScript; React ve React Native tarafında da iş çıkarıyorum.",
+    "intro": "Yaptığım işlerin çoğu analytics dashboard'ları, üç ürünün üzerine kurulduğu bir component kütüphanesi ve roadmap hiç durmadan devam ederken yürüttüğümüz bir Vue 2'den Vue 3'e geçiş oldu.",
+    "agents": "2025'ten beri her gün coding agent'larla çalışıyorum. Bu, bir projeyi ilk feature'dan önce nasıl kurduğumu değiştirdi: generate edilmiş bir API client, sıkılaştırılmış bir compiler ve agent'ın kendi başına okuyabileceği yere yazılmış kurallar.",
+    "nda": "Geliştirdiğim işlerin neredeyse tamamı gizlilik sözleşmesi altında, o yüzden burada bir vitrin bulamazsınız. Ne düşündüğümü {notes} yazıyorum.",
     "ndaLink": "blogda",
     "experience": "Deneyim",
-    "readNotes": "blogu oku →",
-    "roleLine": "Kıdemli Frontend Geliştirici — Vue, TypeScript ve başka ekiplerin bağımlı olduğu ürünlerde altı yıl.",
-    "facts": "Türkiye'de, GMT+3 saat diliminde yaşıyorum ve yalnızca uzaktan çalışıyorum: dünya geneli veya EMEA, sözleşmeli ya da tam zamanlı. Muğla Üniversitesi Bilgisayar Mühendisliği mezunuyum; profesyonel düzeyde İngilizce, ana dil Türkçe. En derin olduğum yer Vue 3, Nuxt ve TypeScript; React ve React Native ile de çalışıyorum."
+    "readNotes": "blogu oku →"
   },
   "now": {
     "title": "Şu an",
     "workingWith": "Çalıştığım araçlar",
     "elsewhere": "Diğer yerler",
-    "role": "Bir müşteri etkileşim platformunda Kıdemli Frontend Geliştirici.",
-    "availability": "Kıdemli uzaktan rollere açığım."
+    "role": "Bir müşteri etkileşim platformunda Kıdemli Frontend Geliştirici olarak çalışıyorum.",
+    "availability": "Uzaktan çalışılan kıdemli rollere açığım."
   },
   "contact": {
-    "title": "Kıdemli bir Vue rolü mü arıyorsunuz?",
-    "subtitle": "Uzaktan, dünya geneli veya EMEA. Sözleşmeli ya da tam zamanlı.",
+    "title": "Kıdemli bir Vue geliştiricisi mi arıyorsunuz?",
+    "subtitle": "Uzaktan çalışıyorum: dünya geneli ya da EMEA, sözleşmeli veya tam zamanlı.",
     "details": "Bilgiler",
     "based": "Konum",
     "availability": "Uygunluk",
@@ -42,38 +42,38 @@
     "downloadCv": "CV'yi indir",
     "email": "E-posta",
     "locationValue": "Türkiye · GMT+3",
-    "availabilityValue": "Yalnızca uzaktan — dünya geneli veya EMEA",
-    "contractValue": "Sözleşmeli ya da tam zamanlı",
+    "availabilityValue": "Yalnızca uzaktan — dünya geneli ya da EMEA",
+    "contractValue": "Sözleşmeli veya tam zamanlı",
     "languagesValue": "İngilizce (profesyonel) · Türkçe (ana dil)",
     "educationValue": "Bilgisayar Mühendisliği lisans, Muğla Üniversitesi (2017–2022)"
   },
   "notFound": {
     "code": "404",
     "title": "Böyle bir sayfa yok.",
-    "body": "Bağlantı eski olabilir ya da bir şeyi taşımış olabilirim.",
+    "body": "Bağlantı eskimiş olabilir ya da ben bir şeyi taşımış olabilirim.",
     "back": "Blog'a dön"
   },
   "experience": {
     "insiderone": {
       "role": "Kıdemli Frontend Geliştirici",
       "period": "Nis 2025 — bugün",
-      "summary": "Microfrontend mimarisi içinde analitik panolar ve veri görselleştirme işleri, etraflarındaki CI/CD ve test kapsamıyla birlikte. Kod yazan ajanlarla çalışmak hakkında bildiklerimin çoğunu burada öğrendim."
+      "summary": "Microfrontend mimarisinin içinde analytics dashboard'ları ve veri görselleştirme işleri yapıyorum; bunların CI/CD hattını ve test kapsamını da birlikte kuruyorum. Coding agent'larla çalışmayı da burada öğrendim."
     },
     "ruul": {
       "role": "Frontend Geliştirici",
       "period": "Ağu 2022 — Nis 2025",
-      "summary": "TypeScript ile Vue 2'den Vue 3 Composition API'ye geçişi yürüttüm ve üç ürünün üzerine kurulduğu ortak bileşen kütüphanesini yazdım. Yol boyunca state yönetimi Vuex'ten Pinia'ya taşındı."
+      "summary": "TypeScript ile Vue 2'den Vue 3 Composition API'ye geçişi ben yürüttüm ve üç ürünün üzerine kurulduğu ortak component kütüphanesini yazdım. Aynı dönemde state yönetimini Vuex'ten Pinia'ya taşıdık."
     },
     "eclone": {
       "role": "Yazılım Geliştirici",
       "period": "Haz 2020 — Ağu 2022",
-      "summary": "Kurumsal müşteriler için uçtan uca full-stack iş: gereksinimi toplamaktan yayına almaya kadar. Frontend Vue'ydu; backend ve veritabanı tasarımı bana bir API'nin diğer tarafının neye mal olduğunu öğretti."
+      "summary": "Kurumsal müşteriler için uçtan uca full-stack iş çıkardım: gereksinimi toplamaktan yayına almaya kadar. Frontend Vue'ydu, backend ve veritabanı tasarımı da bendeydi; bir API'nin arkasında nelerin döndüğünü orada öğrendim."
     }
   },
   "blog": {
     "eyebrow": "Blog",
-    "headline": "Frontend kurmak üzerine ne düşündüğüm, yazıya dökülmüş hâli.",
-    "intro": "Geçişler, tasarım sistemleri, mimari sınırlar ve kod yazan ajanlarla çalışmak. Müşteri işi ve ekran görüntüsü yok — taşınabilir olan kısım, gerekçenin kendisi.",
+    "headline": "Frontend geliştirmeye dair düşündüklerim, yazıya dökülmüş hâli.",
+    "intro": "Geçişler, design system'ler, mimari sınırlar ve coding agent'larla çalışmak. Müşteri işi ya da ekran görüntüsü yok; zaten taşınabilir olan kısım gerekçelerin kendisi.",
     "all": "Tüm yazılar",
     "count": "{count} yazı",
     "minutes": "{count} dk",
