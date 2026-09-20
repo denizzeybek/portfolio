@@ -11,7 +11,7 @@ export default tseslint.config(
   {
     files: ['scripts/**/*.mjs', '.claude/hooks/**/*.mjs', '*.config.js'],
     languageOptions: {
-      globals: { console: 'readonly', process: 'readonly', URL: 'readonly' },
+      globals: { console: 'readonly', process: 'readonly', URL: 'readonly', Buffer: 'readonly' },
     },
   },
   {
