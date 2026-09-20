@@ -6,5 +6,10 @@
     "directory": "./dist",
     // History-mode routes (/blog/<slug>) have no file on disk, so unmatched paths serve index.html.
     "not_found_handling": "single-page-application"
-  }
+  },
+  // Attached on deploy: wrangler creates the DNS records and the certificate in the same account.
+  "routes": [
+    { "pattern": "denizzeybek.dev", "custom_domain": true },
+    { "pattern": "www.denizzeybek.dev", "custom_domain": true }
+  ]
 }
