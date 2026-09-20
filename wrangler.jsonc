@@ -5,7 +5,10 @@
   "assets": {
     "directory": "./dist",
     // History-mode routes (/blog/<slug>) have no file on disk, so unmatched paths serve index.html.
-    "not_found_handling": "single-page-application"
+    "not_found_handling": "single-page-application",
+    // The prerendered pages live in directories; serve them without the trailing slash the
+    // default adds, so the URL matches the canonical tag and the sitemap.
+    "html_handling": "drop-trailing-slash"
   },
   // Attached on deploy: wrangler creates the DNS records and the certificate in the same account.
   "routes": [
