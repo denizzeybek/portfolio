@@ -4,13 +4,18 @@ slug: ai-assisted-project-setup
 date: 2026-09-20
 summary: The first two days of a full-stack project decide how useful an agent will be on it. Here is what I build before any feature.
 tags: [ai-assisted, openapi, typescript]
-readingMinutes: 5
+readingMinutes: 7
 ---
 
 On a recent full-stack project I spent the first two days writing no features at all. I generated
 a TypeScript client from the backend's OpenAPI document, turned the compiler up as far as it would
-go, and wrote the team's conventions down as files an agent reads on its own. Everything after
-that moved faster, and not by a small margin.
+go, wired a test command that runs in seconds, and wrote the team's conventions down as files an
+agent reads on its own. Everything after that moved faster, and not by a little.
+
+The speed people attribute to the model is mostly a property of the repository. Two codebases,
+same model, same prompts: in one the agent ships a feature and the checks stay green, in the other
+it produces something plausible that I spend the afternoon unpicking. The difference is how much
+the repository can tell it, and how quickly.
 
 ## Why starting with the feature fails
 
@@ -22,9 +27,27 @@ and the only detector in the loop is me reading the diff. The agent is fast at p
 has no way to check it, so I become the type system. That is the worst possible division of
 labour, and it gets worse as the codebase grows.
 
+It also gets worse as the agent gets better. A model that writes convincing code without a way to
+verify it just raises the cost of each review: the mistakes move from obvious to subtle, and
+subtle mistakes are the ones that ship.
+
+## The two days, itemised
+
+Concretely, this is what exists before the first feature branch:
+
+- a generated API client, and one rule about who may call the network
+- a `tsconfig` with the strict flags on, including the ones most teams skip
+- lint and format wired to a single command, so style never enters a review
+- a test command that runs in seconds, plus one real test as the example to copy
+- four convention files an agent loads on its own
+- one hook per rule I would otherwise repeat in every review
+
+None of it is clever. All of it is the difference between an agent that asks and an agent that
+guesses.
+
 ## The generated client is the first commit
 
-So the first thing built is the API client, before any view exists. The backend publishes
+The first thing built is the API client, before any view exists. The backend publishes
 `openapi.json`; a generator turns it into types and a typed fetch client in one small package.
 The rule on top of it matters more than the generator: nothing outside that package calls the
 network. No `fetch` in a component, no ad-hoc axios instance in a store. Every call is a named
@@ -52,22 +75,53 @@ filter can read `schema.d.ts` and see exactly which query parameters exist, so i
 them. And when the backend ships a breaking change, regenerating produces a list of errors that
 is, in effect, the migration plan.
 
+The rule is what makes it hold. One exception — a single component that calls `fetch` because the
+endpoint was not in the spec yet — and the next agent reads that file as precedent. Conventions
+are learned from the code far more reliably than from the documentation, by people and models
+alike.
+
 ## Strict types are the feedback loop
 
 A coding agent is only as good as the signal it gets after each edit. Strictness is that signal.
-No `any`, no non-null assertions, unchecked index access on, exact optional property types on,
-unused locals treated as errors. Then the agent can run the type-checker and the unit tests
-itself, read the failures, and fix them without asking. My experience is that the ratio of
-useful-to-wasted turns tracks almost directly with how fast and how specific that loop is: a
-failure that names the file, the line and the expected type produces a correct second attempt,
-while "something is undefined at runtime" produces guesswork.
+
+```jsonc
+{
+  "compilerOptions": {
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true
+  }
+}
+```
+
+The last three are the ones teams skip, and they are the ones that pay here. With them on, the
+agent runs the type-checker and the unit tests itself, reads the failures, and fixes them without
+asking. The ratio of useful to wasted turns tracks almost directly with how fast and how specific
+that loop is: a failure that names the file, the line and the expected type produces a correct
+second attempt, while "something is undefined at runtime" produces guesswork.
+
+Speed matters as much as specificity. A type-check that takes four seconds gets run after every
+edit; one that takes ninety gets run once, at the end, on a pile of changes nobody can untangle.
+
+## Tests as the second contract
+
+Types prove the shapes. Tests prove the behaviour, and they are the only part of the loop that
+can say "this is wrong" about code that compiles.
+
+I do not ask an agent for full coverage — that produces a hundred tests asserting that a heading
+contains the text somebody just typed. What earns a test is the logic a reader cannot verify by
+eye: the sorting, the filtering, the date maths, the boundary between a draft and a published
+thing. One good example in the repository does more than a paragraph of instruction: the agent
+copies the shape, the naming, the level of granularity.
 
 ## Conventions as files, not as prompt text
 
 The last piece is writing down how the codebase works somewhere the agent reads every time, not
 in a prompt I retype. I split it four ways, and the split is the useful part.
 
-- **Rules** are preferences with reasons: naming, component shape, what a note may contain. The
+- **Rules** are preferences with reasons: naming, component shape, what a post may contain. The
   model weighs them. They belong in short files scoped by path glob, so only the relevant one
   loads.
 - **Hooks** are walls. A file over 250 lines, a raw hex colour, a narrating `//` comment: these
@@ -83,6 +137,10 @@ The distinction I would defend hardest is rules versus hooks. Anything I would r
 every single time should not be a rule, because a rule is advice and advice gets weighed against
 other advice. It should be a hook, because a hook is a fact about the repository.
 
+There is a second-order effect worth naming: writing this down makes disagreements visible. A
+convention that three people held slightly differently cannot survive being written as one
+sentence. That is uncomfortable for a week and worth it afterwards.
+
 ## Where it breaks
 
 The honest cost is the two days. On a throwaway prototype you will never recover them, and I have
@@ -95,9 +153,9 @@ now assert something false, and they assert it more convincingly than handwritte
 Generation makes the frontend's safety a function of someone else's spec discipline, which is a
 real dependency, not a free win.
 
-Hooks tuned too tight burn turns. A hard line limit met by a good 280-line module produces a bad
-split into two files that do not deserve separate names. I now add a hook after I have seen the
-mistake twice, not in anticipation of it.
+Hooks tuned too tight cost more than they save. A hard line limit met by a good 280-line module
+produces a bad split into two files that do not deserve separate names. I now add a hook after I
+have seen the mistake twice, not in anticipation of it.
 
 And strict types only prove the shapes are right. They say nothing about whether the week starts
 on Monday, whether the totals should round, or whether any of it was worth building. That part

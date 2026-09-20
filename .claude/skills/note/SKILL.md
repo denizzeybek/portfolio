@@ -12,7 +12,7 @@ Read `.claude/rules/content.md` first — the confidentiality rules there are ha
 - `src/content/notes/` for tone and for what is already covered.
 
 ## Shape
-- 600–900 words. One argument, defended.
+- 1000–1400 words. One argument, defended, with at least two concrete examples.
 - Frontmatter:
   ```yaml
   ---
@@ -36,6 +36,11 @@ Read `.claude/rules/content.md` first — the confidentiality rules there are ha
 - No AI-essay tropes: no "In today's fast-paced world", no rhetorical question openers, no
   three-item summary that repeats the intro.
 - Close with the honest limit of the approach — where it breaks down, or what it costs.
+
+## Turkish
+The `.tr.md` file is written in Turkish from the idea, never rendered out of the English one. No
+inverted sentences, no calqued idioms, no English clause chains. See the Turkish section of
+`.claude/rules/content.md` — it is the rule most likely to be broken.
 
 ## After writing
 Update the note index if one exists, then check the reading time, the word count and that the
