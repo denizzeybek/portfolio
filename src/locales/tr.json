@@ -14,7 +14,7 @@
   "home": {
     "eyebrow": "Yazılım Geliştirici · Ağırlıklı frontend · Uzaktan · GMT+3",
     "headline": "Deniz Zeybek",
-    "roleLine": "Yazılım geliştiriciyim, ağırlıklı olarak frontend — stack'in her katmanında TypeScript, başka ekiplerin üzerine iş kurduğu ürünlerde altı yıl.",
+    "roleLine": "Yazılım geliştiriciyim, ağırlıklı olarak frontend — stack'in her katmanında TypeScript, altı yıldır kurumsal ölçekte canlıya çıkan web uygulamaları yazıyorum.",
     "facts": "Türkiye'de yaşıyorum, GMT+3 saat dilimindeyim ve yalnızca uzaktan çalışıyorum: dünya geneli ya da EMEA, sözleşmeli veya tam zamanlı fark etmiyor. Muğla Üniversitesi Bilgisayar Mühendisliği mezunuyum. İngilizcem profesyonel seviyede, ana dilim Türkçe. Asıl derinleştiğim yer Vue 3, Nuxt ve TypeScript; React ve React Native tarafında da iş çıkarıyorum. Bir feature'ı API sınırında bırakmak yerine Node ve NestJS tarafını da kendim yazıyorum.",
     "intro": "Yaptığım işlerin çoğu analytics dashboard'ları, üç ürünün üzerine kurulduğu bir component kütüphanesi ve roadmap hiç durmadan devam ederken yürüttüğümüz bir Vue 2'den Vue 3'e geçiş oldu.",
     "agents": "2025'ten beri her gün coding agent'larla çalışıyorum. Bu, bir projeyi ilk feature'dan önce nasıl kurduğumu değiştirdi: generate edilmiş bir API client, sıkılaştırılmış bir compiler ve agent'ın kendi başına okuyabileceği yere yazılmış kurallar.",
