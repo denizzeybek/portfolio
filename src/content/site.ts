@@ -9,6 +9,7 @@ export const CONTACT = {
   linkedin: 'https://linkedin.com/in/denizzeybek',
   linkedinLabel: 'linkedin.com/in/denizzeybek',
   cvUrl: '/cv.pdf',
+  cvFileName: 'Deniz-Zeybek-CV.pdf',
 } as const
 
 export const STACK = [

@@ -7,7 +7,9 @@
       </div>
       <div class="flex flex-wrap gap-3">
         <UiButton variant="outline" :href="`mailto:${CONTACT.email}`">{{ CONTACT.email }}</UiButton>
-        <UiButton variant="ghost" :href="CONTACT.cvUrl">{{ t('contact.downloadCv') }}</UiButton>
+        <UiButton variant="ghost" :href="CONTACT.cvUrl" :download="CONTACT.cvFileName">
+          {{ t('contact.downloadCv') }}
+        </UiButton>
       </div>
     </div>
 
