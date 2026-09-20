@@ -9,6 +9,7 @@ Machine-readable project rules for Claude Code. `CLAUDE.md` at the repo root lin
 | [styling.md](./styling.md) | Tailwind v4 tokens, forbidden raw values, dark-first palette |
 | [typescript.md](./typescript.md) | No `any`, no `!`, explicit public APIs, type-only imports |
 | [naming.md](./naming.md) | Files, folders, composables, props, emits |
+| [i18n.md](./i18n.md) | No hardcoded strings, `en.json` + `tr.json` parity |
 | [content.md](./content.md) | What a note may and may not say — confidentiality first |
 | [comment-policy.md](./comment-policy.md) | Allowed `//` comments |
 | [anti-patterns.md](./anti-patterns.md) | Reject on sight |

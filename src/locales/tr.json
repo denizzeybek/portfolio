@@ -1,0 +1,90 @@
+{
+  "site": {
+    "name": "Deniz Zeybek",
+    "role": "Kıdemli Frontend Geliştirici"
+  },
+  "nav": {
+    "home": "Hakkımda",
+    "notes": "Yazılar",
+    "contact": "İletişim",
+    "language": "Dil",
+    "switchTo": "English"
+  },
+  "home": {
+    "eyebrow": "Kıdemli Frontend Geliştirici · Vue · TypeScript",
+    "headline": "Üç yıl sonra da içinde çalışılabilir frontend'ler kuruyorum.",
+    "intro": "Altı yıldır Vue ve TypeScript ile, çoğunlukla başka ekiplerin bağımlı olduğu ürünlerde: analitik panolar, üç ürünün üzerine kurulduğu bir bileşen kütüphanesi ve yol haritası durmadan sürdürülen bir Vue 2'den Vue 3'e geçiş. Proje gerektirdiğinde React ve React Native.",
+    "agents": "2025'ten beri her gün kod yazan ajanlarla çalışıyorum ve bu, ilk özellikten önce projeyi nasıl kurduğumu değiştirdi: üretilmiş bir API istemcisi, sıkı bir derleyici ve ajanın okuyabileceği yere yazılmış kurallar.",
+    "nda": "Geliştirdiğim işlerin neredeyse tamamı gizlilik sözleşmesi altında, bu yüzden burada bir vitrin yok. Ne düşündüğüm {notes} içinde.",
+    "ndaLink": "yazılarda",
+    "experience": "Deneyim",
+    "readNotes": "yazıları oku →"
+  },
+  "now": {
+    "title": "Şu an",
+    "workingWith": "Çalıştığım araçlar",
+    "elsewhere": "Diğer yerler",
+    "role": "Bir müşteri etkileşim platformunda Kıdemli Frontend Geliştirici.",
+    "availability": "Kıdemli uzaktan rollere açığım."
+  },
+  "notes": {
+    "eyebrow": "Yazılar",
+    "headline": "Frontend kurmak üzerine ne düşündüğüm, yazıya dökülmüş hâli.",
+    "intro": "Geçişler, tasarım sistemleri, mimari sınırlar ve kod yazan ajanlarla çalışmak. Müşteri işi ve ekran görüntüsü yok — taşınabilir olan kısım, gerekçenin kendisi.",
+    "all": "Tüm yazılar",
+    "count": "{count} yazı",
+    "minutes": "{count} dk",
+    "empty": "Henüz yayımlanmış yazı yok."
+  },
+  "note": {
+    "back": "← tüm yazılar",
+    "published": "Yayım",
+    "reading": "Okuma",
+    "readingValue": "{count} dakika",
+    "outline": "Bu sayfada",
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "missingTitle": "Böyle bir yazı yok.",
+    "missingBack": "Tüm yazılara dön"
+  },
+  "contact": {
+    "title": "Kıdemli bir Vue rolü mü arıyorsunuz?",
+    "subtitle": "Uzaktan, dünya geneli veya EMEA. Sözleşmeli ya da tam zamanlı.",
+    "details": "Bilgiler",
+    "based": "Konum",
+    "availability": "Uygunluk",
+    "contract": "Çalışma biçimi",
+    "languages": "Diller",
+    "education": "Eğitim",
+    "downloadCv": "CV'yi indir",
+    "email": "E-posta",
+    "locationValue": "Türkiye · GMT+3",
+    "availabilityValue": "Yalnızca uzaktan — dünya geneli veya EMEA",
+    "contractValue": "Sözleşmeli ya da tam zamanlı",
+    "languagesValue": "İngilizce (profesyonel) · Türkçe (ana dil)",
+    "educationValue": "Bilgisayar Mühendisliği lisans, Muğla Üniversitesi (2017–2022)"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Böyle bir sayfa yok.",
+    "body": "Bağlantı eski olabilir ya da bir şeyi taşımış olabilirim.",
+    "back": "Tüm yazılara dön"
+  },
+  "experience": {
+    "insiderone": {
+      "role": "Kıdemli Frontend Geliştirici",
+      "period": "Nis 2025 — bugün",
+      "summary": "Microfrontend mimarisi içinde analitik panolar ve veri görselleştirme işleri, etraflarındaki CI/CD ve test kapsamıyla birlikte. Kod yazan ajanlarla çalışmak hakkında bildiklerimin çoğunu burada öğrendim."
+    },
+    "ruul": {
+      "role": "Frontend Geliştirici",
+      "period": "Ağu 2022 — Nis 2025",
+      "summary": "TypeScript ile Vue 2'den Vue 3 Composition API'ye geçişi yürüttüm ve üç ürünün üzerine kurulduğu ortak bileşen kütüphanesini yazdım. Yol boyunca state yönetimi Vuex'ten Pinia'ya taşındı."
+    },
+    "eclone": {
+      "role": "Yazılım Geliştirici",
+      "period": "Haz 2020 — Ağu 2022",
+      "summary": "Kurumsal müşteriler için uçtan uca full-stack iş: gereksinimi toplamaktan yayına almaya kadar. Frontend Vue'ydu; backend ve veritabanı tasarımı bana bir API'nin diğer tarafının neye mal olduğunu öğretti."
+    }
+  }
+}

@@ -5,7 +5,7 @@
   >
     <span class="hidden w-24 shrink-0 font-mono text-xs leading-7 text-ink-faint sm:block">
       {{ publishedAt }}
-      <span class="block text-ink-faint/70">{{ note.readingMinutes }} min</span>
+      <span class="block text-ink-faint/70">{{ t('notes.minutes', { count: note.readingMinutes }) }}</span>
     </span>
 
     <span class="flex-grow">
@@ -32,6 +32,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { RouterLink } from 'vue-router'
 
 import UiTag from '@/components/ui/UiTag.vue'
@@ -45,5 +46,7 @@ interface IProps {
 
 const props = defineProps<IProps>()
 
-const publishedAt = computed(() => formatNoteDate(props.note.date, 'short'))
+const { t, locale } = useI18n()
+
+const publishedAt = computed(() => formatNoteDate(props.note.date, 'short', locale.value))
 </script>

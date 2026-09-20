@@ -16,6 +16,8 @@ conventions here are not decoration: they are the thing being demonstrated. Keep
   components use Tailwind utilities that map to them. See `.claude/rules/styling.md`.
 - **Design system first.** Before writing markup, check `src/components/ui/` for an existing
   primitive. Extend it rather than forking it.
+- **No hardcoded user-facing strings.** Every visible string comes from `src/locales/en.json` and
+  `src/locales/tr.json`, through `t('scope.key')`. See `.claude/rules/i18n.md`.
 - **TypeScript everywhere.** `lang="ts"` on every `<script setup>`, no `any`, no non-null `!`.
 - **Comments:** only `// TODO:` / `// FIXME:` / `// HACK:` and lint directives. Explanation goes
   in a JSDoc block or in the note, not in line noise. See `.claude/rules/comment-policy.md`.
@@ -23,7 +25,7 @@ conventions here are not decoration: they are the thing being demonstrated. Keep
 ## Stack
 - Vue 3 (`<script setup>`, Composition API) + TypeScript
 - Vite 8, Tailwind CSS v4 (css-first `@theme` tokens, no `tailwind.config.js`)
-- Vue Router 5, `@vueuse/core`
+- Vue Router 5, vue-i18n 11 (en + tr), `@vueuse/core`
 - Vitest + `@vue/test-utils` for logic and design-system primitives
 
 ## Layout
@@ -34,6 +36,8 @@ src/
   components/layout/     AppHeader, AppFooter
   composables/           useXxx.ts, one concern each
   content/notes/         the notes themselves (markdown + typed frontmatter)
+  locales/               en.json + tr.json — every visible string
+  i18n/                  vue-i18n setup and locale resolution
   router/                routes, lazy-loaded views
   types/                 shared types
   views/                 page entries; feature-local parts in _components/ next to them

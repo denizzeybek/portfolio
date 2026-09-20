@@ -5,7 +5,7 @@
       :to="{ name: 'note', params: { slug: previous.slug } }"
       class="flex-grow no-underline"
     >
-      <UiMeta class="pb-1.5">Previous</UiMeta>
+      <UiMeta class="pb-1.5">{{ t('note.previous') }}</UiMeta>
       <span class="font-display text-base text-ink">{{ previous.title }}</span>
     </RouterLink>
 
@@ -14,13 +14,14 @@
       :to="{ name: 'note', params: { slug: next.slug } }"
       class="flex-grow no-underline sm:text-right"
     >
-      <UiMeta class="pb-1.5">Next</UiMeta>
+      <UiMeta class="pb-1.5">{{ t('note.next') }}</UiMeta>
       <span class="font-display text-base text-ink">{{ next.title }}</span>
     </RouterLink>
   </nav>
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import { RouterLink } from 'vue-router'
 
 import UiMeta from '@/components/ui/UiMeta.vue'
@@ -33,4 +34,6 @@ interface IProps {
 }
 
 defineProps<IProps>()
+
+const { t } = useI18n()
 </script>

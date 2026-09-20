@@ -9,6 +9,11 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/home/index.vue'),
   },
   {
+    path: '/notes',
+    name: 'notes',
+    component: () => import('@/views/notes/index.vue'),
+  },
+  {
     path: '/notes/:slug',
     name: 'note',
     component: () => import('@/views/note/index.vue'),
@@ -16,8 +21,7 @@ const routes: RouteRecordRaw[] = [
   },
   {
     path: '/about',
-    name: 'about',
-    component: () => import('@/views/about/index.vue'),
+    redirect: { name: 'home' },
   },
   {
     path: '/:pathMatch(.*)*',

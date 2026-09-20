@@ -20,14 +20,15 @@
   </article>
 
   <section v-else class="flex flex-col gap-4">
-    <UiMeta>404</UiMeta>
-    <h1 class="font-display text-3xl font-bold text-ink">That note does not exist.</h1>
-    <UiLink :to="{ name: 'home' }">Back to all notes</UiLink>
+    <UiMeta>{{ t('notFound.code') }}</UiMeta>
+    <h1 class="font-display text-3xl font-bold text-ink">{{ t('note.missingTitle') }}</h1>
+    <UiLink :to="{ name: 'notes' }">{{ t('note.missingBack') }}</UiLink>
   </section>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 import UiLink from '@/components/ui/UiLink.vue'
 import UiMeta from '@/components/ui/UiMeta.vue'
@@ -45,6 +46,8 @@ interface IProps {
 }
 
 const props = defineProps<IProps>()
+
+const { t } = useI18n()
 
 const { publishedNotes, findBySlug } = useNotes()
 
