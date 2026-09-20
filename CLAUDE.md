@@ -17,7 +17,8 @@ conventions here are not decoration: they are the thing being demonstrated. Keep
 - **Design system first.** Before writing markup, check `src/components/ui/` for an existing
   primitive. Extend it rather than forking it.
 - **No hardcoded user-facing strings.** Every visible string comes from `src/locales/en.json` and
-  `src/locales/tr.json`, through `t('scope.key')`. See `.claude/rules/i18n.md`.
+  `src/locales/tr.json`, through `t('scope.key')`. Turkish is written but not published —
+  `ENABLED_LOCALES` is `['en']` until a native pass is done. See `.claude/rules/i18n.md`.
 - **TypeScript everywhere.** `lang="ts"` on every `<script setup>`, no `any`, no non-null `!`.
 - **Comments:** only `// TODO:` / `// FIXME:` / `// HACK:` and lint directives. Explanation goes
   in a JSDoc block or in the note, not in line noise. See `.claude/rules/comment-policy.md`.

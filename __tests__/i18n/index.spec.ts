@@ -13,12 +13,16 @@ function keyPaths(value: unknown, prefix = ''): string[] {
 }
 
 describe('resolveInitialLocale', () => {
-  it('prefers a stored choice', () => {
-    expect(resolveInitialLocale('tr', ['en-US'])).toBe('tr')
+  it('prefers a stored choice among the enabled locales', () => {
+    expect(resolveInitialLocale('en', ['tr-TR'])).toBe('en')
   })
 
-  it('falls back to the browser language when nothing is stored', () => {
-    expect(resolveInitialLocale(null, ['tr-TR', 'en-US'])).toBe('tr')
+  it('ignores a stored locale that is not published yet', () => {
+    expect(resolveInitialLocale('tr', ['tr-TR'])).toBe('en')
+  })
+
+  it('ignores a browser language that is not published yet', () => {
+    expect(resolveInitialLocale(null, ['tr-TR', 'en-US'])).toBe('en')
   })
 
   it('ignores an unsupported stored value and an unsupported browser language', () => {

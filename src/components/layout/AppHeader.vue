@@ -12,6 +12,7 @@
       <UiLink :to="{ name: 'blog' }" tone="quiet" :underline="false">{{ t('nav.blog') }}</UiLink>
       <UiLink href="#contact" tone="quiet" :underline="false">{{ t('nav.contact') }}</UiLink>
       <button
+        v-if="canSwitch"
         type="button"
         class="inline-flex min-h-11 cursor-pointer items-center gap-2 border-0 bg-transparent font-mono text-xs text-ink-muted transition-colors duration-150 hover:text-accent"
         :aria-label="t('nav.switchLanguage', { language: t('nav.switchTo') })"
@@ -33,5 +34,5 @@ import UiLink from '@/components/ui/UiLink.vue'
 import { useLocale } from '@/composables/useLocale'
 
 const { t } = useI18n()
-const { otherLocale, toggleLocale } = useLocale()
+const { canSwitch, otherLocale, toggleLocale } = useLocale()
 </script>
