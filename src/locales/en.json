@@ -57,17 +57,36 @@
     "insiderone": {
       "role": "Senior Frontend Developer",
       "period": "Apr 2025 — present",
-      "summary": "Analytics dashboards and data-visualisation work inside a microfrontend architecture, with the CI/CD and test coverage around them. Where I learned most of what I know about building alongside coding agents."
+      "summary": "Full-stack feature work on an AI-powered customer engagement platform, across a microfrontend and microservices architecture.",
+      "highlights": [
+        "Architected and shipped a greenfield rewrite of a core analytics dashboard in TypeScript and the Composition API, built around composables.",
+        "Built real-time campaign data-visualisation components, and an internal npm package for a shared filter system, developed test-first.",
+        "Built an LLM-powered Figma-to-code plugin that turns designs into design-system components, with Playwright visual verification and self-healing fixes.",
+        "Configured Webpack Module Federation for the Vue microfrontends, and the GitHub Actions pipelines that test and deploy them.",
+        "Introduced the agentic workflow the team now uses: shared conventions, custom skills and TDD guardrails for coding agents."
+      ]
     },
     "ruul": {
       "role": "Frontend Developer",
       "period": "Aug 2022 — Apr 2025",
-      "summary": "Led a Vue 2 to Vue 3 Composition API migration with TypeScript, and built the shared component library three products were rebuilt on. State management moved from Vuex to Pinia along the way."
+      "summary": "Product work on Vue and Nuxt, and the shared frontend foundation three products were rebuilt on.",
+      "highlights": [
+        "Led the migration from Vue 2 to the Vue 3 Composition API with TypeScript, without stopping feature delivery.",
+        "Architected a reusable UI component library of 50+ components, adopted across three products.",
+        "Moved state management from Vuex to Pinia, cutting roughly a third of the boilerplate.",
+        "Turned Figma designs into responsive, pixel-accurate interfaces with Tailwind CSS and Ant Design Vue.",
+        "Drove architectural decisions and sprint planning in a cross-functional agile team."
+      ]
     },
     "eclone": {
       "role": "Software Developer",
       "period": "Jun 2020 — Aug 2022",
-      "summary": "Full-stack work for enterprise clients, from gathering the requirement to shipping it. The frontend was Vue; the backend and the database design taught me what the other side of an API costs."
+      "summary": "Full-stack work for enterprise clients, from gathering the requirement to shipping it.",
+      "highlights": [
+        "Built and deployed full-stack web applications with Vue on the frontend and a backend I owned myself.",
+        "Designed and maintained SQL Server databases, and optimised the queries behind the APIs.",
+        "Worked directly with clients to turn business needs into something that could be built."
+      ]
     }
   },
   "blog": {

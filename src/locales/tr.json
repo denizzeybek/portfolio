@@ -57,17 +57,36 @@
     "insiderone": {
       "role": "Kıdemli Frontend Geliştirici",
       "period": "Nis 2025 — bugün",
-      "summary": "Microfrontend mimarisinin içinde analytics dashboard'ları ve veri görselleştirme işleri yapıyorum; bunların CI/CD hattını ve test kapsamını da birlikte kuruyorum. Coding agent'larla çalışmayı da burada öğrendim."
+      "summary": "Yapay zekâ destekli bir müşteri etkileşim platformunda, microfrontend ve microservice mimarisi üzerinde uçtan uca feature geliştiriyorum.",
+      "highlights": [
+        "Temel analytics dashboard'unun sıfırdan yeniden yazımını üstlendim: TypeScript, Composition API ve composable tabanlı bir mimari.",
+        "Gerçek zamanlı kampanya verisi için görselleştirme component'leri ve ortak filtre sistemi için test-first geliştirilmiş bir iç npm paketi yazdım.",
+        "Tasarımları design system component'lerine çeviren, Playwright ile görsel doğrulama ve kendi kendini düzeltme yapan LLM tabanlı bir Figma-to-code plugin'i geliştirdim.",
+        "Vue microfrontend'leri için Webpack Module Federation kurulumunu ve bunları test edip deploy eden GitHub Actions pipeline'larını yazdım.",
+        "Ekibin bugün kullandığı agentic çalışma biçimini getirdim: ortak konvansiyonlar, custom skill'ler ve coding agent'lar için TDD korumaları."
+      ]
     },
     "ruul": {
       "role": "Frontend Geliştirici",
       "period": "Ağu 2022 — Nis 2025",
-      "summary": "TypeScript ile Vue 2'den Vue 3 Composition API'ye geçişi ben yürüttüm ve üç ürünün üzerine kurulduğu ortak component kütüphanesini yazdım. Aynı dönemde state yönetimini Vuex'ten Pinia'ya taşıdık."
+      "summary": "Vue ve Nuxt ile ürün geliştirdim, üç ürünün üzerine kurulduğu ortak frontend altyapısını yazdım.",
+      "highlights": [
+        "Vue 2'den Vue 3 Composition API'ye geçişi, feature teslimatını durdurmadan yürüttüm.",
+        "Üç üründe kullanılan, 50'den fazla component'lik yeniden kullanılabilir UI kütüphanesini kurdum.",
+        "State yönetimini Vuex'ten Pinia'ya taşıdım; boilerplate'in yaklaşık üçte biri gitti.",
+        "Figma tasarımlarını Tailwind CSS ve Ant Design Vue ile piksel hassasiyetinde, responsive arayüzlere çevirdim.",
+        "Cross-functional bir agile ekipte mimari kararları ve sprint planlamasını yürüttüm."
+      ]
     },
     "eclone": {
       "role": "Yazılım Geliştirici",
       "period": "Haz 2020 — Ağu 2022",
-      "summary": "Kurumsal müşteriler için uçtan uca full-stack iş çıkardım: gereksinimi toplamaktan yayına almaya kadar. Frontend Vue'ydu, backend ve veritabanı tasarımı da bendeydi; bir API'nin arkasında nelerin döndüğünü orada öğrendim."
+      "summary": "Kurumsal müşteriler için uçtan uca iş çıkardım: gereksinimi toplamaktan yayına almaya kadar.",
+      "highlights": [
+        "Frontend'i Vue olan, backend'ini de kendim yazdığım full-stack web uygulamaları geliştirdim ve yayına aldım.",
+        "SQL Server veritabanlarını tasarlayıp sürdürdüm, API'lerin arkasındaki sorguları optimize ettim.",
+        "Müşterilerle doğrudan çalışıp iş ihtiyaçlarını geliştirilebilir bir şeye dönüştürdüm."
+      ]
     }
   },
   "blog": {

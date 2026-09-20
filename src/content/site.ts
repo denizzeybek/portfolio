@@ -32,16 +32,16 @@ export const EXPERIENCE: readonly IExperience[] = [
   {
     id: 'insiderone',
     company: 'InsiderOne',
-    stack: ['Vue', 'TypeScript', 'Module Federation', 'Vitest', 'Playwright'],
+    stack: ['Vue', 'TypeScript', 'NestJS', 'Module Federation', 'Vitest', 'Playwright', 'GitHub Actions'],
   },
   {
     id: 'ruul',
     company: 'Ruul',
-    stack: ['Vue 3', 'Nuxt', 'TypeScript', 'Pinia', 'Tailwind'],
+    stack: ['Vue 3', 'Nuxt', 'TypeScript', 'Pinia', 'Tailwind', 'Ant Design Vue'],
   },
   {
     id: 'eclone',
     company: 'Eclone',
-    stack: ['Vue', 'SQL', 'REST'],
+    stack: ['Vue', 'SQL Server', 'REST APIs'],
   },
 ]
