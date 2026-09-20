@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Deniz Zeybek",
-    "role": "Kıdemli Frontend Geliştirici"
+    "role": "Yazılım Geliştirici"
   },
   "nav": {
     "home": "Hakkımda",
@@ -12,9 +12,9 @@
     "blog": "Blog"
   },
   "home": {
-    "eyebrow": "Kıdemli Frontend Geliştirici · Gerektiğinde full-stack · Uzaktan",
+    "eyebrow": "Yazılım Geliştirici · Ağırlıklı frontend · Uzaktan · GMT+3",
     "headline": "Deniz Zeybek",
-    "roleLine": "Kıdemli Frontend Geliştirici — stack'in her katmanında TypeScript, başka ekiplerin üzerine iş kurduğu ürünlerde altı yıl.",
+    "roleLine": "Yazılım geliştiriciyim, ağırlıklı olarak frontend — stack'in her katmanında TypeScript, başka ekiplerin üzerine iş kurduğu ürünlerde altı yıl.",
     "facts": "Türkiye'de yaşıyorum, GMT+3 saat dilimindeyim ve yalnızca uzaktan çalışıyorum: dünya geneli ya da EMEA, sözleşmeli veya tam zamanlı fark etmiyor. Muğla Üniversitesi Bilgisayar Mühendisliği mezunuyum. İngilizcem profesyonel seviyede, ana dilim Türkçe. Asıl derinleştiğim yer Vue 3, Nuxt ve TypeScript; React ve React Native tarafında da iş çıkarıyorum. Bir feature'ı API sınırında bırakmak yerine Node ve NestJS tarafını da kendim yazıyorum.",
     "intro": "Yaptığım işlerin çoğu analytics dashboard'ları, üç ürünün üzerine kurulduğu bir component kütüphanesi ve roadmap hiç durmadan devam ederken yürüttüğümüz bir Vue 2'den Vue 3'e geçiş oldu.",
     "agents": "2025'ten beri her gün coding agent'larla çalışıyorum. Bu, bir projeyi ilk feature'dan önce nasıl kurduğumu değiştirdi: generate edilmiş bir API client, sıkılaştırılmış bir compiler ve agent'ın kendi başına okuyabileceği yere yazılmış kurallar.",
@@ -31,8 +31,8 @@
     "availability": "Uzaktan çalışılan kıdemli rollere açığım."
   },
   "contact": {
-    "title": "Kıdemli bir frontend geliştiricisi mi arıyorsunuz?",
-    "subtitle": "Frontend ağırlıklı çalışıyorum ama bir işi uçtan uca almaktan memnunum. Uzaktan: dünya geneli ya da EMEA, sözleşmeli veya tam zamanlı.",
+    "title": "Frontend ya da full-stack bir rol mü arıyorsunuz?",
+    "subtitle": "Ağırlıklı olarak frontend yazıyorum, ama bir işi uçtan uca almaktan memnunum. Uzaktan: dünya geneli ya da EMEA, sözleşmeli veya tam zamanlı.",
     "details": "Bilgiler",
     "based": "Konum",
     "availability": "Uygunluk",
