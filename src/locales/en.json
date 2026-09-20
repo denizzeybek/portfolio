@@ -12,7 +12,7 @@
     "blog": "Blog"
   },
   "home": {
-    "eyebrow": "Senior Frontend Engineer · Remote · GMT+3",
+    "eyebrow": "Senior Frontend Engineer · Full-stack when it helps · Remote",
     "headline": "Deniz Zeybek",
     "intro": "Most of my work has been analytics dashboards, a component library three products were rebuilt on, and a Vue 2 to Vue 3 migration that ran while the roadmap kept moving.",
     "agents": "Since 2025 I work with coding agents every day, and it changed how I set a project up before the first feature: a generated API client, a strict compiler, and conventions written where an agent can read them.",
@@ -20,8 +20,8 @@
     "ndaLink": "blog",
     "experience": "Experience",
     "readNotes": "read the blog →",
-    "roleLine": "Senior Frontend Engineer — Vue, TypeScript, and six years of products other teams depend on.",
-    "facts": "I am based in Turkey on GMT+3 and work remotely only, worldwide or across EMEA, contract or full-time. Computer Engineering degree from Muğla University, professional English, native Turkish. Deepest on Vue 3, Nuxt and TypeScript; hands-on with React and React Native."
+    "roleLine": "Senior Frontend Engineer — TypeScript across the stack, six years on products other teams depend on.",
+    "facts": "I am based in Turkey on GMT+3 and work remotely only, worldwide or across EMEA, contract or full-time. Computer Engineering degree from Muğla University, professional English, native Turkish. Deepest on Vue 3, Nuxt and TypeScript; hands-on with React and React Native; comfortable owning the Node and NestJS side of a feature rather than handing it over at the API."
   },
   "now": {
     "title": "Now",
@@ -31,8 +31,8 @@
     "availability": "Open to senior remote roles."
   },
   "contact": {
-    "title": "Hiring for a senior Vue role?",
-    "subtitle": "Remote, worldwide or EMEA. Contract or full-time.",
+    "title": "Hiring a senior frontend engineer?",
+    "subtitle": "Frontend-led and happy to take a feature end to end. Remote, worldwide or EMEA, contract or full-time.",
     "details": "Details",
     "based": "Based in",
     "availability": "Availability",
