@@ -16,6 +16,8 @@ export interface INote extends INoteFrontmatter {
   body: string
   /** `body` rendered to HTML. */
   html: string
+  /** Which language file this version came from: `<slug>.<locale>.md`. */
+  locale?: 'en' | 'tr'
 }
 
 /** A frontmatter value before it has been narrowed onto `INoteFrontmatter`. */

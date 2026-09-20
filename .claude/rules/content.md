@@ -20,6 +20,11 @@ almost entirely under NDA.
 - Prefer a generic pattern ("a timesheet-shaped app with a generated API client") over a
   recognisable one.
 
+## Two languages
+Every post exists as `<slug>.en.md` and `<slug>.tr.md`. Same slug, date, tags and draft flag in
+both; only `title`, `summary` and the body are translated. The Turkish version is written for a
+Turkish developer, not transliterated: terms the local industry uses in English stay in English.
+
 ## Shape of a note
 - 600–900 words, one argument, a concrete example, a stated trade-off.
 - Frontmatter: `title`, `slug`, `date` (ISO), `summary` (≤ 160 chars), `tags`, `readingMinutes`.

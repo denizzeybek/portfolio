@@ -10,6 +10,10 @@
       </h1>
       <p class="pt-5 font-prose text-xl leading-relaxed text-ink-muted">{{ note.summary }}</p>
 
+      <p v-if="isUntranslated" class="pt-4 font-mono text-xs text-ink-faint">
+        {{ t('post.untranslated') }}
+      </p>
+
       <UiProse class="pt-8">
         <!-- eslint-disable-next-line vue/no-v-html -- markdown-it renders this repo's own notes with html:false -->
         <div v-html="body" />
@@ -47,15 +51,22 @@ interface IProps {
 
 const props = defineProps<IProps>()
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 const { publishedNotes, findBySlug } = useNotes()
 
 const note = computed(() => findBySlug(props.slug))
+const isUntranslated = computed(() => note.value?.locale !== locale.value)
 const body = computed(() => (note.value ? withHeadingIds(note.value.html) : ''))
 const headings = computed(() => (note.value ? extractHeadings(note.value.html) : []))
 
-const index = computed(() => publishedNotes.findIndex((item: INote) => item.slug === props.slug))
-const previous = computed(() => (index.value > 0 ? publishedNotes[index.value - 1] : undefined))
-const next = computed(() => (index.value >= 0 ? publishedNotes[index.value + 1] : undefined))
+const index = computed(() =>
+  publishedNotes.value.findIndex((item: INote) => item.slug === props.slug),
+)
+const previous = computed(() =>
+  index.value > 0 ? publishedNotes.value[index.value - 1] : undefined,
+)
+const next = computed(() =>
+  index.value >= 0 ? publishedNotes.value[index.value + 1] : undefined,
+)
 </script>

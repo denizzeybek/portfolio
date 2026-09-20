@@ -16,6 +16,7 @@ export const STACK = [
   'React · React Native, hands-on',
   'Tailwind · Vitest · Playwright',
   'Node · NestJS · Module Federation',
+  'Electron, desktop apps',
   'Claude Code, daily',
 ] as const
 

@@ -88,6 +88,7 @@
     "previous": "Previous",
     "next": "Next",
     "missingTitle": "That post does not exist.",
-    "missingBack": "Back to the blog"
+    "missingBack": "Back to the blog",
+    "untranslated": "This post has not been translated into Turkish yet — you are reading the English version."
   }
 }

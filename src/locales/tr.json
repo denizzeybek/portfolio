@@ -88,6 +88,7 @@
     "previous": "Önceki",
     "next": "Sonraki",
     "missingTitle": "Böyle bir yazı yok.",
-    "missingBack": "Blog'a dön"
+    "missingBack": "Blog'a dön",
+    "untranslated": "Bu yazı henüz Türkçeye çevrilmedi — İngilizce sürümünü okuyorsunuz."
   }
 }

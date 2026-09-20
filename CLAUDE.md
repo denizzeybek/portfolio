@@ -36,7 +36,7 @@ src/
   components/ui/         the design system: Ui*.vue primitives, nothing feature-specific
   components/layout/     AppHeader, AppFooter
   composables/           useXxx.ts, one concern each
-  content/notes/         the notes themselves (markdown + typed frontmatter)
+  content/notes/         blog posts, one file per language: <slug>.en.md / <slug>.tr.md
   locales/               en.json + tr.json — every visible string
   i18n/                  vue-i18n setup and locale resolution
   router/                routes, lazy-loaded views
