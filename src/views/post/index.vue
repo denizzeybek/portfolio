@@ -41,6 +41,8 @@ import { useNotes } from '@/composables/useNotes'
 
 import PostAside from './_components/PostAside.vue'
 import PostNav from './_components/PostNav.vue'
+import { SITE_ORIGIN, useSeo } from '@/composables/useSeo'
+
 import { extractHeadings, withHeadingIds } from './_etc/headings'
 
 import type { INote } from '@/types/note.types'
@@ -59,6 +61,26 @@ const note = computed(() => findBySlug(props.slug))
 const isUntranslated = computed(() => note.value?.locale !== locale.value)
 const body = computed(() => (note.value ? withHeadingIds(note.value.html) : ''))
 const headings = computed(() => (note.value ? extractHeadings(note.value.html) : []))
+
+useSeo(() => ({
+  title: note.value ? `${note.value.title} — ${t('site.name')}` : t('post.missingTitle'),
+  description: note.value?.summary ?? t('blog.intro'),
+  path: `/blog/${props.slug}`,
+  type: 'article',
+  publishedAt: note.value?.date,
+  jsonLd: note.value
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: note.value.title,
+        description: note.value.summary,
+        datePublished: note.value.date,
+        keywords: note.value.tags.join(', '),
+        author: { '@type': 'Person', name: t('site.name'), url: SITE_ORIGIN },
+        mainEntityOfPage: `${SITE_ORIGIN}/blog/${props.slug}`,
+      }
+    : undefined,
+}))
 
 const index = computed(() =>
   publishedNotes.value.findIndex((item: INote) => item.slug === props.slug),

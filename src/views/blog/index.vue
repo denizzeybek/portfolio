@@ -26,6 +26,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 
+import { useSeo } from '@/composables/useSeo'
 import UiDivider from '@/components/ui/UiDivider.vue'
 import UiMeta from '@/components/ui/UiMeta.vue'
 import { useNotes } from '@/composables/useNotes'
@@ -34,4 +35,10 @@ import BlogListItem from './_components/BlogListItem.vue'
 
 const { t } = useI18n()
 const { publishedNotes: notes } = useNotes()
+
+useSeo(() => ({
+  title: `${t('blog.eyebrow')} — ${t('site.name')}`,
+  description: t('blog.intro'),
+  path: '/blog',
+}))
 </script>

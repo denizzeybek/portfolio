@@ -47,6 +47,8 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 
+import { SITE_ORIGIN, useSeo } from '@/composables/useSeo'
+import { CONTACT } from '@/content/site'
 import UiDivider from '@/components/ui/UiDivider.vue'
 import UiLink from '@/components/ui/UiLink.vue'
 import UiMeta from '@/components/ui/UiMeta.vue'
@@ -55,4 +57,19 @@ import ExperienceList from './_components/ExperienceList.vue'
 import NowPanel from './_components/NowPanel.vue'
 
 const { t } = useI18n()
+
+useSeo(() => ({
+  title: `${t('site.name')} — ${t('site.role')}`,
+  description: t('home.facts'),
+  path: '/',
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: t('site.name'),
+    jobTitle: t('site.role'),
+    url: SITE_ORIGIN,
+    email: `mailto:${CONTACT.email}`,
+    sameAs: [CONTACT.github, CONTACT.linkedin],
+  },
+}))
 </script>
